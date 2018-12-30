@@ -30,7 +30,7 @@ let package = Package(
 		.package(url: "https://github.com/PerfectlySoft/Perfect-libpq.git", from: "2.0.0"),
 		],
 	targets: [
-		.target(name: "PerfectPostgreSQL", dependencies: ["PerfectCRUD"], path: "Sources"),
+		.target(name: "PerfectPostgreSQL", dependencies: ["PerfectCRUD"], path: "Sources/PerfectPostgreSQL"),
 		.testTarget(name: "PerfectPostgreSQLTests", dependencies: ["PerfectPostgreSQL"])
 	]
 )
@@ -45,7 +45,7 @@ let package = Package(
 		.package(url: "https://github.com/PerfectlySoft/Perfect-libpq-linux.git", from: "2.0.0"),
 		],
 	targets: [
-		.target(name: "PerfectPostgreSQL", dependencies: ["PerfectCRUD"], path: "Sources"),
+		.target(name: "PerfectPostgreSQL", dependencies: ["PerfectCRUD"], path: "Sources/PerfectPostgreSQL"),
 		.testTarget(name: "PerfectPostgreSQLTests", dependencies: ["PerfectPostgreSQL"])
 	]
 )
